@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>삼..뭐라구? - 손안의 고전 명시, 삼한시귀감 학습 서비스</title>
+  <meta name="description" content="고려 최자가 엮은 우리나라 최초의 한시선집 삼한시귀감(三韓詩龜鑑)을 쉽고 재미있게 배우는 모바일 학습 서비스" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+  <!-- Google Fonts & Pretendard -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Serif+KR:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets (design.md 기반 디자인 시스템) -->
+  <link rel="stylesheet" href="./css/design-tokens.css" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/layout.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+</head>
+<body>
+  <div class="app-container">
+    <!-- 상단 브랜드 헤더 -->
+    <header class="top-header">
+      <div class="brand-wrapper">
+        <span style="font-size: 20px;">📜</span>
+        <h1 class="brand-title">삼..뭐라구?</h1>
+        <span class="brand-badge">三韓詩龜鑑</span>
+      </div>
+      <div class="header-actions">
+        <a href="#explore" class="btn-icon" style="width: 34px; height: 34px;" title="빠른 검색">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <!-- 메인 뷰 컨테이너 (SPA 화면 전환 영역) -->
+    <main id="view-container" role="main"></main>
+
+    <!-- 하단 고정 4개 네비게이션 탭 바 (Thumb-Zone 최적화) -->
+    <nav class="bottom-nav" aria-label="메인 네비게이션">
+      <!-- 1. 홈 탭 -->
+      <button class="nav-item active" data-tab="home" id="tab-home" aria-label="홈 탭">
+        <svg class="nav-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        <span>홈</span>
+      </button>
+
+      <!-- 2. 탐색 탭 -->
+      <button class="nav-item" data-tab="explore" id="tab-explore" aria-label="탐색 탭">
+        <svg class="nav-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+        </svg>
+        <span>목차·탐색</span>
+      </button>
+
+      <!-- 3. 학습 탭 -->
+      <button class="nav-item" data-tab="study" id="tab-study" aria-label="학습 탭">
+        <svg class="nav-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+        </svg>
+        <span>학습·연습</span>
+      </button>
+
+      <!-- 4. 보관함 탭 -->
+      <button class="nav-item" data-tab="archive" id="tab-archive" aria-label="보관함 탭">
+        <svg class="nav-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+        </svg>
+        <span>보관함</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- 메인 스크립트 (ES Module) -->
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

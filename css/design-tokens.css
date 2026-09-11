@@ -1,0 +1,68 @@
+/* design-tokens.css - Based on design.md & Figma design system */
+:root {
+  /* Colors - Core Monochrome */
+  --color-primary: #000000;
+  --color-on-primary: #ffffff;
+  --color-canvas: #ffffff;
+  --color-inverse-canvas: #111111;
+  --color-surface-soft: #f6f6f7;
+  --color-hairline: #e5e5e8;
+  --color-hairline-soft: #f0f0f2;
+
+  /* Colors - Pastel Color Blocks */
+  --color-block-lime: #d8f77e;
+  --color-block-lilac: #e6dbff;
+  --color-block-cream: #fff7d6;
+  --color-block-mint: #d5fae6;
+  --color-block-pink: #fde2e9;
+  --color-block-coral: #ffd7c7;
+  --color-block-navy: #181d31;
+
+  /* Colors - Text / Ink */
+  --color-ink: #000000;
+  --color-ink-muted: #555555;
+  --color-inverse-ink: #ffffff;
+  --color-on-inverse-soft: rgba(255, 255, 255, 0.16);
+
+  /* Colors - Accent & Semantic */
+  --color-accent-magenta: #ff2a70;
+  --color-semantic-success: #12b886;
+  --color-semantic-warning: #f59f00;
+  --color-overlay-scrim: rgba(0, 0, 0, 0.55);
+
+  /* Spacing */
+  --space-hair: 1px;
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 48px;
+  --space-section: 64px;
+
+  /* Border Radius */
+  --radius-xs: 2px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-pill: 9999px;
+  --radius-full: 9999px;
+
+  /* Typography Families */
+  --font-sans: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  --font-serif: 'Noto Serif KR', 'Batang', serif;
+  --font-mono: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Elevation / Shadows */
+  --shadow-flat: none;
+  --shadow-subtle: 0 4px 16px rgba(0, 0, 0, 0.05);
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.06);
+  --shadow-modal: 0 16px 40px rgba(0, 0, 0, 0.14);
+
+  /* Layout */
+  --app-max-width: 480px;
+  --nav-bar-height: 64px;
+  --header-height: 56px;
+}
