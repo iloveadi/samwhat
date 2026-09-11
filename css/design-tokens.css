@@ -1,3 +1,33 @@
+/* NanumSquareRound (둥근고딕) WebFont 정의 */
+@font-face {
+  font-family: 'NanumSquareRound';
+  font-weight: 300;
+  font-display: swap;
+  src: url('https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundL.woff2') format('woff2'),
+       url('https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundL.woff') format('woff');
+}
+@font-face {
+  font-family: 'NanumSquareRound';
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundR.woff2') format('woff2'),
+       url('https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundR.woff') format('woff');
+}
+@font-face {
+  font-family: 'NanumSquareRound';
+  font-weight: 700;
+  font-display: swap;
+  src: url('https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundB.woff2') format('woff2'),
+       url('https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundB.woff') format('woff');
+}
+@font-face {
+  font-family: 'NanumSquareRound';
+  font-weight: 800;
+  font-display: swap;
+  src: url('https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundEB.woff2') format('woff2'),
+       url('https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundEB.woff') format('woff');
+}
+
 /* design-tokens.css - Based on design.md & Figma design system */
 :root {
   /* Colors - Core Monochrome */
@@ -51,7 +81,7 @@
   --radius-full: 9999px;
 
   /* Typography Families */
-  --font-sans: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  --font-sans: 'NanumSquareRound', 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
   --font-serif: 'Noto Serif KR', 'Batang', serif;
   --font-mono: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
